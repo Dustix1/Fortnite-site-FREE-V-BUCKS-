@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fortnite</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sites.css">
+    <link rel="stylesheet" href="freevbucks.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <script src="freevbucks.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark animated slideInLeft">
+            <a class="navbar-brand animated zoomIn" style="animation-delay: 1s;" href="index.html"><img class="homelogo"
+                    src="img/home.png" alt="Home"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link animated fadeInRight" style="animation-delay: 0.5s;" href="index.html">Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated fadeInRight" style="animation-delay: 0.75s;"
+                            href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link animated fadeInRight" style="animation-delay: 0.75s;"
+                            href="freevbucks.html">Free
+                            V-Bucks</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5 p-2 text-left pl-5">
+        <h1 class="fortnitefont text-center">Have you ever wanted some <span>free V-BUCKS?</span></h1>
+        <p>Yes? Then this site is just for <b>you</b>!!!<br>It is pretty easy you <b>just</b> have to do <b>a few
+                things</b>.</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            Click here to unlock download link!
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Unlock download link</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a id="yt-button-me" onclick="ytButtonMe(); clickedAllThree()" class="btn mr-3"
+                            href="https://www.youtube.com/channel/UClJFE1lZdyL-sjJVGaQ3lUA" target="_blank"
+                            role="button"><img src="img/Youtube-logo-red.png" alt="YT logo"></a>Subscribe to my Youtube
+                        channel.<span id="ytCheckMe"></span><br><a id="yt-button-friend"
+                            onclick="ytButtonFriend(); clickedAllThree()" class="btn mr-3"
+                            href="https://www.youtube.com/channel/UCyc2NrHd2eamMU7O4QGLSQw" target="_blank"
+                            role="button"><img src="img/Youtube-logo-red.png" alt="YT logo"></a>Subscribe to my friends
+                        Youtube
+                        channel.<span id="ytCheckFriend"></span><br><a id="tw-button-me"
+                            onclick="twButtonMe(); clickedAllThree()" class="btn mr-3"
+                            href="https://twitter.com/XxDustix" target="_blank" role="button"><img
+                                src="img/twitter-logo.png" alt="Twitter logo"></a>Follow me on Twitter.<span
+                            id="twCheckMe"></span><br><a id="tw-button-friend"
+                            onclick="twButtonFriend(); clickedAllThree()" class="btn mr-3"
+                            href="https://twitter.com/DankMemeAl" target="_blank" role="button"><img
+                                src="img/twitter-logo.png" alt="Twitter logo"></a>Follow my friend on Twitter.<span
+                            id="twCheckFriend"></span>
+                        <p id="linkToDownload"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center">&copy; David Kanovský</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
